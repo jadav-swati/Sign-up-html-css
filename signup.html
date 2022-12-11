@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="icon" type="image/x-icon" href="signup.png">
+    <style>
+        *{
+            background: black;
+            color: white;
+        }
+        button{
+            width: 226px;
+            height: 58px;
+            left: 198px;
+            top: 808px;
+            font-size: 30px;
+            background: #FFFFFF;
+            color: black;
+            margin-top: 20px;
+        }
+        input[type="text"],[type="email"],[type="password"],[type="dob"]{
+            border-top: none;
+            border-bottom: 2px solid ;
+            border-left: none;
+            border-right: none;
+            padding: 10px;
+            font-size: 24px;
+            width: 1177px;
+        }
+        input[type="radio"],[type="checkbox"]{
+            background-color: black;
+            margin-top: 20px;
+            background: none;
+        }
+        p{
+            font-size: 64px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 90px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p>Signup</p>
+    <form>
+        <input type="text"  id="name" required placeholder="Full Name"><br>
+        <input type="email" id="email" required placeholder="Email"><br>
+        <input type="password" id="pws" required placeholder="password"><br>
+        <input type="password" id="cpws" required placeholder="Conform Password"><br>
+        <input type="dob" id="dob" required placeholder="DOB"><br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox">
+        <label>I agree to all the Tearm and Condition</label><br>
+        <button type="submit">Submit</button>
+    </form>   
+</body>
+</html>
